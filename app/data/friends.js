@@ -1,8 +1,8 @@
 // Data...
 var friendsArray = [
     {
-        name: "Bert",
-        photo: "https://allthingscomedy.com/images/Bert-Kreischer_171114_171623.jpg",
+        name: "Gordon",
+        photo: "https://yt3.ggpht.com/a/AGF-l7_6r_NR0iZWw6Tm_eDIiYy35mIUoPqKPUCfgw=s900-mo-c-c0xffffffff-rj-k-no",
         scores:[
             5,
             1,
@@ -17,8 +17,8 @@ var friendsArray = [
           ]
     },
     {
-        name: "Christina",
-        photo: "https://m.media-amazon.com/images/M/MV5BOTYxZDdiYmItZWY1ZC00YTkxLWE2NjMtYjZkZmVjODAyODJkXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_UX214_CR0,0,214,317_AL_.jpg",
+        name: "Jamie",
+        photo: "https://cdn.jamieoliver.com/library/images/Jamie-Social.jpg",
         scores: [
             1,
             2,
@@ -33,8 +33,8 @@ var friendsArray = [
         ]
     },
     {
-        name: "Tom",
-        photo: "https://image-ticketfly.imgix.net/00/02/91/03/73-og.jpg?w=500&h=334&fit=crop&crop=top",
+        name: "Samin",
+        photo: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1551807827%2FSaminNosrat-Cookbook-FT-Blog0319.jpg%3Fitok%3DEbwycWTk&w=450&c=sc&poi=face&q=85",
         scores: [
             5,
             5,
