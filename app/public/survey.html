@@ -10,37 +10,54 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Roboto:300" rel="stylesheet">
+
+    <!-- Page styling -->
     <style>
+        body {
+            background-image: url("https://previews.123rf.com/images/nadianb/nadianb1801/nadianb180100100/93275273-superfoods-on-white-background-organic-food-and-healthy-vegan-food-legumes-nuts-seeds-greens-oil-and.jpg");
+            background-size: cover;
+            color: #222;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Merriweather', serif;
+        }
+
+        h2, h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container-custom {
+            background-color: rgba(255, 255, 255, .5)
+        }
+
         .modal-content {
             color: rgb(0, 119, 255);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
         }
-        
+
         .modal-header {
             background-color: #bbb;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, .4);
             z-index: 1;
         }
-        
+
         .modal-body {
             background-color: #ddd;
             z-index: 0;
         }
-        
+
         #match-pic {
             box-shadow: 2px 3px 5px rgba(0, 0, 0, .4);
-        }
-
-        #match-name-text {
-            text-shadow: 2px 3px 2px rgba(0, 0, 0, .4);
         }
     </style>
 </head>
 
 <body>
-    <a href="/"><button class="btn btn-lg btn-primary"><span class="fa fa-home"></span> Home</button></a>
-
-    <div class="container">
+    <div class="container container-custom p-3">
+        <a href="/"><button class="btn btn-lg btn-primary"><span class="fa fa-home"></span> Home</button></a>
         <div class="row">
             <div class="col-12">
                 <h1 class='text-center'>Survey Questions</h1>
@@ -60,13 +77,13 @@
             <input type="text" id="photo" class="form-control">
         </div>
         <hr>
-        <h3 class='text-center'>How much do you agree with these statements?</h3>
+        <h3 class='text-center'>How much do you agree with these food-related statements?</h3>
         <!-- Form Questions start here... -->
         <form>
             <div class="form-group">
-                <h4>Question 1</h4>
-                <label for="select1">You are more laid-back than intense.</label>
-                <select class="form-control" id="select1">
+                <h4 class="mt-4">Question 1</h4>
+                <label for="select1">Eating healthy is an important priority for you, even when eating out.</label>
+                <select class="form-control p-3" id="select1">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -74,9 +91,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 2</h4>
-                <label for="select2">You love horror movies.</label>
-                <select class="form-control" id="select2">
+                <h4 class="mt-4">Question 2</h4>
+                <label for="select2">You try new foods and restaurants whenever possible.</label>
+                <select class="form-control p-3" id="select2">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -84,9 +101,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 3</h4>
-                <label for="select3">The best pizza topping is pineapple.</label>
-                <select class="form-control" id="select3">
+                <h4 class="mt-4">Question 3</h4>
+                <label for="select3">You can find something you like at any restaurant.</label>
+                <select class="form-control p-3" id="select3">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -94,9 +111,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 4</h4>
-                <label for="select4">You prefer the beach to the mountains.</label>
-                <select class="form-control" id="select4">
+                <h4 class="mt-4">Question 4</h4>
+                <label for="select4">You enjoy spicy food.</label>
+                <select class="form-control p-3" id="select4">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -104,9 +121,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 5</h4>
-                <label for="select5">You would rather watch sports than sitcoms.</label>
-                <select class="form-control" id="select5">
+                <h4 class="mt-4">Question 5</h4>
+                <label for="select5">You're willing to go out of your way for great food.</label>
+                <select class="form-control p-3" id="select5">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -114,9 +131,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 6</h4>
-                <label for="select6">You like to exercise everyday.</label>
-                <select class="form-control" id="select6">
+                <h4 class="mt-4">Question 6</h4>
+                <label for="select6">You would enjoy an entirely vegetarian restaurant.</label>
+                <select class="form-control p-3" id="select6">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -124,9 +141,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 7</h4>
-                <label for="select7">You prefer going out on weekends to staying in.</label>
-                <select class="form-control" id="select7">
+                <h4 class="mt-4">Question 7</h4>
+                <label for="select7">The best pizza topping is pineapple.</label>
+                <select class="form-control p-3" id="select7">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -134,9 +151,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 8</h4>
-                <label for="select8">Eating healthy is an important priority for you.</label>
-                <select class="form-control" id="select8">
+                <h4 class="mt-4">Question 8</h4>
+                <label for="select8">Vegetablese should be part of every meal.</label>
+                <select class="form-control p-3" id="select8">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -144,9 +161,9 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 9</h4>
-                <label for="select9">You like dogs more than cats.</label>
-                <select class="form-control" id="select9">
+                <h4 class="mt-4">Question 9</h4>
+                <label for="select9">Avocados are overrated.</label>
+                <select class="form-control p-3" id="select9">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -154,18 +171,18 @@
                     <option>5</option>
                 </select>
 
-                <h4>Question 10</h4>
-                <label for="select10">You enjoy trying new foods and restaurants whenever
-                    possible.</label>
-                <select class="form-control" id="select10">
+                <h4 class="mt-4">Question 10</h4>
+                <label for="select10">You'd rather cook for your friends at home than go to a restaurant.</label>
+                <select class="form-control p-3" id="select10">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
-                        aria-hidden="true"></i>Submit</button>
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-lg mt-4" id="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>
@@ -185,7 +202,7 @@
             <div class="row">
                 <div class="modal-body p-3 d-flex justify-content-center match-pic">
                     <div class="col-md-6 d-flex justify-content-center">
-                        <img src='#' alt='Photo of your match.' class='img-thumbnail' id='match-pic' />
+                        <img src='#' alt='Photo not available.' class='img-thumbnail' id='match-pic' />
                     </div>
                 </div>
             </div>
@@ -208,54 +225,57 @@
         $('#submit').on('click', function (event) {
             event.preventDefault();
 
-            // Grab data
-            var newMember = {
-                name: $('#name').val().trim(),
-                photo: $('#photo').val().trim(),
-                scores: [
-                    $('#select1').val().trim(),
-                    $('#select2').val().trim(),
-                    $('#select3').val().trim(),
-                    $('#select4').val().trim(),
-                    $('#select5').val().trim(),
-                    $('#select6').val().trim(),
-                    $('#select7').val().trim(),
-                    $('#select8').val().trim(),
-                    $('#select9').val().trim(),
-                    $('#select10').val().trim(),
-                ]
+            if (($('#name').val().trim() !== '') && ($('#photo').val().trim() !== '')) {
+
+                // Grab data
+                var newMember = {
+                    name: $('#name').val().trim(),
+                    photo: $('#photo').val().trim(),
+                    scores: [
+                        $('#select1').val().trim(),
+                        $('#select2').val().trim(),
+                        $('#select3').val().trim(),
+                        $('#select4').val().trim(),
+                        $('#select5').val().trim(),
+                        $('#select6').val().trim(),
+                        $('#select7').val().trim(),
+                        $('#select8').val().trim(),
+                        $('#select9').val().trim(),
+                        $('#select10').val().trim(),
+                    ]
+                };
+                console.log(newMember);
+
+
+                $.post("/api/friends", newMember, function (data) {
+                    console.log(data);
+                    if (data) {
+                        // alert('Your information has been submitted!');
+                        // alert(`Your top match is ${data.name}`);
+
+                        // Append match data to modal...
+                        $('#match-pic').attr('src', `${data.photo}`);
+                        $('#match-name-text').text(data.name);
+                        // ...and then trigger the modal display
+                        $('#match-modal').modal();
+                    }
+                })
+                // Clearing form...
+                $('#name').val('');
+                $('#photo').val('');
+                // Set these to 1 because it looks weird when they're empty.
+                $('#select1').val('1')
+                $('#select2').val('1')
+                $('#select3').val('1')
+                $('#select4').val('1')
+                $('#select5').val('1')
+                $('#select6').val('1')
+                $('#select7').val('1')
+                $('#select8').val('1')
+                $('#select9').val('1')
+                $('#select10').val('1')
             };
-            console.log(newMember);
-
-
-            $.post("/api/friends", newMember, function (data) {
-                console.log(data);
-                if (data) {
-                    // alert('Your information has been submitted!');
-                    // alert(`Your top match is ${data.name}`);
-
-                    // Append match data to modal...
-                    $('#match-pic').attr('src', `${data.photo}`);
-                    $('#match-name-text').text(data.name);
-                    // ...and then trigger the modal display
-                    $('#match-modal').modal();
-                }
-            })
-            // Clearing form...
-            $('#name').val('');
-            $('#photo').val('');
-            // Set these to 1 because it looks weird when they're empty.
-            $('#select1').val('1')
-            $('#select2').val('1')
-            $('#select3').val('1')
-            $('#select4').val('1')
-            $('#select5').val('1')
-            $('#select6').val('1')
-            $('#select7').val('1')
-            $('#select8').val('1')
-            $('#select9').val('1')
-            $('#select10').val('1')
-        })
+        });
 
 
     </script>
